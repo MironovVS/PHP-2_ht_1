@@ -1,27 +1,3 @@
-<?php
-$server='localhost';
-$username='Test';
-$password='';
-mysql_connect($server, $username, $password);
-
-$db_name='Test';
-mysql_select_db($db_name);
-
-// подключаем библиотеки
-require_once('../model/function.php');
-
-
-$article = article_search($_GET['id']);
-
-
-?>
-<html>
-<head>
-  <link href="../css/css-main.css" rel="stylesheet" type="text/css">
-  <?php echo $title ?>
-</head>
-
-<body>
   <table>
   <tbody>
   <tr>
@@ -40,6 +16,4 @@ $article = article_search($_GET['id']);
 <?php endforeach?>
 </tbody>
     </table>
-<a href="../index.php">К списку статей</a>
-</body>
-</html>
+<a href="../PHP-2_ht_1.git/index.php">К списку статей</a>
