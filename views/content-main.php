@@ -23,5 +23,5 @@
     </tbody>
   </table>
   <footer>
-    <a href="../HT/views/add.php">Добавить статью</a>
+    <a href="../PHP-2_ht_1.git/add.php">Добавить статью</a>
   </footer>
