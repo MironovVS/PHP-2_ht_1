@@ -5,7 +5,7 @@
     <form method="GET" name="art_up">
       <input type="hidden" name="art_id" value="<?php echo $up["$i"]['id']?>">
       Название статьи: <input type="text" name="art_name" value="<?php echo $up["$i"]['article_name']?>">
-      Дата: <input type="date" name="art_date"><br>
+      Дата: <input type="date" name="art_date" value="<?php echo $up["$i"]['article_date']?>"><br>
       Статья: <textarea name="art_text" rows="5" ><?php echo $up["$i"]['article_text']?></textarea><br>
       <input type="submit" name="submit" value="Сохранить">
     </form>

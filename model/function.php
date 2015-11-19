@@ -45,7 +45,7 @@ function article_search($id) {
 
 
 // Функция редактирования статьи
-function article_update($id, $name, $text){
-  $request="UPDATE `Test` SET `article_name`='$name', `article_text`='$text' WHERE `id`='$id'";
+function article_update($id, $name, $date, $text){
+  $request="UPDATE `Test` SET `article_name`='$name', `article_date`='$date',`article_text`='$text' WHERE `id`='$id'";
   mysql_query($request);
 }
