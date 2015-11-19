@@ -16,8 +16,14 @@ $articles = article_list();
 // Заголовок страницы
 $title = 'Список статей';
 
+$content='views/content-main.php';
+
+$content = $_GET['view'] == 'list' ? 'views/content_index_list.php'
+  : 'views/content_index_table.php';
+
+
 
 // Вывод HTML
-include ('views/main.php');
+include ('main.php');
 
 
