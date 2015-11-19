@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="css/css-main.css" rel="stylesheet" type="text/css">
   <meta charset="UTF-8" />
   <title><?php echo $title ?></title>
 </head>
@@ -11,8 +12,5 @@
 <section>
   <?php include $content ?>
 </section>
-<footer>
-  <a href="../HT/views/add.php">Добавить статью</a>
-</footer>
 </body>
 </html>

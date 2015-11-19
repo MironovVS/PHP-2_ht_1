@@ -14,11 +14,14 @@
           <td><?php echo $article["$i"]['id']?></td>
           <td><?php echo $article["$i"]['article_name']?></a></td>
           <td><?php echo $article["$i"]['article_date']?></td>
-          <td><a href="../PHP-2_ht_1.git/views/article.php?id=<?php echo $article["$i"]['id']?>">Статья</a></td>
-          <td><a href="../PHP-2_ht_1.git/views/update.php?id=<?php echo $article["$i"]['id']?>">Редактировать</a></td>
+          <td><a href="../PHP-2_ht_1.git/article.php?id=<?php echo $article["$i"]['id']?>">Статья</a></td>
+          <td><a href="../PHP-2_ht_1.git/update.php?id=<?php echo $article["$i"]['id']?>">Редактировать</a></td>
           <td><a href="../PHP-2_ht_1.git/views/delete.php?id=<?php echo $article["$i"]['id']?>">Удалить</a></td>
         </tr>
       <?php endfor; ?>
     <?php endforeach;?>
     </tbody>
   </table>
+  <footer>
+    <a href="../HT/views/add.php">Добавить статью</a>
+  </footer>

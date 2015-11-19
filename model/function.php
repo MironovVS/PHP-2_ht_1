@@ -44,47 +44,8 @@ function article_search($id) {
 }
 
 
-//
-//
-//
-//function article_item($id) {
-//  $id=addslashes($id);
-//  $sql="SELECT `article_name`, `article_date`, `article_text` FROM `Test` WHERE `id`='$id'";
-//  $request=mysql_query($sql);
-//  $art=array();
-//
-//  While ($row=mysql_fetch_assoc($request)) {
-//    $art[]=$row;
-//  }
-//  return array($art);
-//}
-//
-//function article_del($id) {
-//  $id=addslashes($id);
-//  $sql="SELECT `article_name`, `article_date`, `article_text` FROM `Test` WHERE `id`='$id'";
-//  $request=mysql_query($sql);
-//  $art=array();
-//
-//  While ($row=mysql_fetch_assoc($request)) {
-//    $art[]=$row;
-//  }
-//  return array($art);
-//}
-//
-//function article_up($id) {
-//  $id=addslashes($id);
-//  $sql="SELECT `id`,`article_name`, `article_date`, `article_text` FROM `Test` WHERE `id`='$id'";
-//  $request=mysql_query($sql);
-//  $up=array();
-//
-//  While ($row=mysql_fetch_assoc($request)) {
-//    $up[]=$row;
-//  }
-//  return array($up);
-//}
-
 // Функция редактирования статьи
-function article_up_up($id, $name, $text){
+function article_update($id, $name, $text){
   $request="UPDATE `Test` SET `article_name`='$name', `article_text`='$text' WHERE `id`='$id'";
   mysql_query($request);
 }
