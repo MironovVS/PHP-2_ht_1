@@ -3,7 +3,12 @@
 // подключаем библиотеки
 require_once('model/function.php');
 
-$article = article_search($_GET['id']);
+$id=(int)$_GET['id'];
+if (!$id) {
+  die("Не верный id");
+}
+
+$article = article_search($id);
 
 $content='views/content-article.php';
 
