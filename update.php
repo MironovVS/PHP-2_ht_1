@@ -8,17 +8,15 @@
 
 include_once('model/function.php');
 
-$id=$_GET['id'];
+$id=(int)$_GET['id'];
+if (!$id) {
+    die("Не верный id");
+}
 
 $article_update = article_search($id);
 
-$art_id=$_GET['art_id'];
-$art_name=$_GET['art_name'];
-$art_date=$_GET['art_date'];
-$art_text=$_GET['art_text'];
-
-if (isset($_GET['submit'])) {
-    article_update($art_id, $art_name, $art_date, $art_text);
+if (isset($_POST['submit'])) {
+    article_update($_POST['art_id'], $_POST['art_name'], $_POST['art_date'], $_POST['art_text']);
     die(header('Location: index.php'));}
 
 $content='views/content-update.php';
